@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f4b88d7f-605d-4157-843e-d3cc6f820d38">
+  <name>СозданиеОтчетаПоФизЛицам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание отчета по физ лицам</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <commandInterface>Extended</commandInterface>
+    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+    <defaultStyle>Extended</defaultStyle>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="045a5c8e-ab80-4a35-bcf0-c14595bfca8f"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ae0a918e-5b3e-4f82-b547-c4c952fc73ca"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="0530c14a-b0b3-4c21-908a-210ea41663c7"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="d0370a86-171a-412a-b140-92a6c920d421"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="ebc27fe6-f104-40b4-a345-5c70b884f81b"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="4cffb928-fff5-4b59-b644-a8e4c1b2cf13"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="af52ef65-e85a-4d93-8ffb-82f01f5c9e35"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>Расш1_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.23</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.Расш1_ОсновнаяРоль</defaultRoles>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <compatibilityMode>8.3.23</compatibilityMode>
+  <languages uuid="898dfd92-86f6-4bb8-9f16-1ebce0634b35">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <roles>Role.Расш1_ОсновнаяРоль</roles>
+  <catalogs>Catalog.Должность</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <reports>Report.ОтчетПоФизЛицам</reports>
+  <informationRegisters>InformationRegister.РегистрПоФизЛицам</informationRegisters>
+</mdclass:Configuration>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="582156e6-42a2-49bd-a202-0f8f0a3d8541">
+  <producedTypes>
+    <selectionType typeId="cb8a483c-b175-4147-b70f-99577e4e9646" valueTypeId="78d45cb0-78c3-42a2-b39f-b136ebaa9e3e"/>
+    <listType typeId="3107c94b-db40-4ce5-ac7e-cdfb48c5994e" valueTypeId="e1c4f8a0-6278-4582-be0d-80021fc0db45"/>
+    <managerType typeId="267b8e7d-13ad-4d15-b784-7f7e30d7db76" valueTypeId="d8992038-dc0a-4a7e-9764-1a09bc1c8ad9"/>
+    <recordSetType typeId="784f7a66-11dd-4210-a979-a4701f861c39" valueTypeId="3e9da4e7-144d-4bfd-95b9-74b252b29ee0"/>
+    <recordKeyType typeId="4c0bc168-584f-4778-81dd-2271796628ba" valueTypeId="80b501f3-12f7-4870-a448-b74f661539ec"/>
+    <recordType typeId="9caff876-088c-4268-8dc8-05064ccdfab5" valueTypeId="085a7f08-a545-4dee-9f86-1de3864f4e66"/>
+    <recordManagerType typeId="9c5e70e1-bb1e-4869-98d7-74a997866b05" valueTypeId="91be7716-7e2e-4ccf-a420-ccea37c93ff0"/>
+  </producedTypes>
+  <name>РегистрПоФизЛицам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр по физ лицам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.РегистрПоФизЛицам.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a0a53836-7506-41ce-9469-74b31cbf072e">
+    <name>ФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1d86646-0d36-4ed1-bb90-d24040d8cfed">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="755fbe31-eeaf-46a4-ab24-744763f8b79f">
+    <name>СтажРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стаж работы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0b607a39-5e76-4aa5-bc6b-d406e1a8ae82">
+    <name>ПериодСтажировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период стажировки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <forms uuid="8cca8384-e36f-4574-b8f7-ba9740ad13e7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
